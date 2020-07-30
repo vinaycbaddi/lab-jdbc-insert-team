@@ -24,6 +24,7 @@ class Main{
 	String cityName=br.readLine();
 	city=new City(cityID,cityName);
     citydao.createCity(city);
+    citydao.getCityByName(city.getCityName());
 	System.out.println(city.getCityName());
 	System.out.println("Enter the team name");
 	String teamname=br.readLine();
